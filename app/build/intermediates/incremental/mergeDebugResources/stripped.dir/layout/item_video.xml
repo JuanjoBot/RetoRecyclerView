@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivVideoThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/translucent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvChannelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="456 likes"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivVideoThumbnail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvVideoViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="666 comments"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@id/tvChannelName"
+        app:layout_constraintRight_toLeftOf="@+id/tvVideoDatePosted"
+        app:layout_constraintTop_toBottomOf="@id/ivVideoThumbnail" />
+
+    <TextView
+        android:id="@+id/tvVideoDatePosted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="69 shares"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/ivVideoThumbnail"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvLikes"
+        android:layout_width="78dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:background="#633F51B5"
+        android:text="LIKE"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvVideoViews" />
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="121dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:background="#633F51B5"
+        android:text="COMMENT"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintLeft_toRightOf="@id/tvLikes"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvVideoViews" />
+
+    <TextView
+        android:id="@+id/tvShare"
+        android:layout_width="103dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:background="#633F51B5"
+        android:text="SHARE"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@id/tvComment"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvVideoDatePosted" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
